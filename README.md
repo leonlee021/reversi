@@ -1,1 +1,2 @@
 # reversi
+Reversi (also known as Othello) board game with an implemented AI as the opponent. User may choose the board dimensions (4x4 ~ 26x26) as well as the color of his or her marker (black makes the first move, white makes the second move). Download and open in console to play. 

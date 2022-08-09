@@ -1,0 +1,20 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [
+        ""
+      ],
+      "stopAtEntry": true,
+      "cwd": "/Users/leon.lee.21/Desktop/repos/reversi",
+      "environment": [],
+      "program": "/Users/leon.lee.21/Desktop/repos/reversi/build/Debug/outDebug",
+      "internalConsoleOptions": "openOnSessionStart",
+      "MIMode": "lldb",
+      "externalConsole": false
+    }
+  ]
+}
