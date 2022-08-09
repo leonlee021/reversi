@@ -124,6 +124,16 @@ void applyComputerMove(char board[][26], int n, char colour, char* str){
                                 strcat(row_column,column);
                                 local_score = checkScore(board,n,row_column,colour,i,j,direction[k],direction[m]);
                                 free(row_column);
+                                if ((i==0 && j==0) || (i==n-1 && j==0) || (i==0 && j==n-1) || (i == n-1 && j==n-1)){
+                                    local_score = local_score + 3;
+                                }
+                                else if ((i==1 && j==0) || (i==n-2 && j==0) || (i==0 && j==1) || (i==0 && j==n-2) || 
+                                        (i==1 && j==1) || (i==1 && j==n-1) || (i==n-1 && j==1) || (i==n-1 && j==n-1)){
+                                    local_score = local_score - 3;
+                                }
+                                else if ((i>n/4 && i<(3*n)/4)){
+                                    local_score = local_score + 1;
+                                }
                                 if (local_score > best_score){
                                     best_score = local_score;
                                     best_move[0] = alphabets[i];
